@@ -1,0 +1,17 @@
+# Github action that verifies that the image builds.
+#
+# @author Stavros Grigoriou <unix121@protonmail.com>
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  build_docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build docker-compose.yaml
+        run: |
+          docker-compose build

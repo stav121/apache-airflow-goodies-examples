@@ -1,0 +1,4 @@
+{
+  "airgoodies-mongo-db-connection-url": "mongodb://root:root@mongo:27017",
+  "airgoodies-mongo-db-name": "test"
+}
