@@ -7,6 +7,7 @@ from xcom.tasks import task1, task2, task3, task4
 Example DAG that demonstrates the usage of airgoodies.xcom.XComManager
 
 @author: Stavros Grigoriou <unix121@protonmail.com>
+@since: 0.0.3
 """
 
 with DAG(
@@ -17,7 +18,7 @@ with DAG(
             'owner': 'airflow'
         },
         catchup=False,
-        tags=['xcom_manager', 'airgoodies:v0.0.2'],
+        tags=['xcom_manager', 'airgoodies:v0.0.3'],
 ) as dag:
     import logging
 
@@ -27,4 +28,5 @@ with DAG(
     t2 = build_task(dag=dag, callable=task2, name='xcom_t2')
     t3 = build_task(dag=dag, callable=task3, name='xcom_t3')
     t4 = build_task(dag=dag, callable=task4, name='xcom_t4')
+
     t1 >> t2 >> t3 >> t4

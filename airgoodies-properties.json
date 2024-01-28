@@ -1,4 +1,7 @@
 {
   "airgoodies-mongo-db-connection-url": "mongodb://root:root@mongo:27017",
-  "airgoodies-mongo-db-name": "test"
+  "airgoodies-mongo-db-name": "test",
+  "airgoodies-aws-s3-connection-name": "",
+  "airgoodies-aws-s3-default-bucket": "",
+  "aws-s3-example-csv": "test.csv"
 }

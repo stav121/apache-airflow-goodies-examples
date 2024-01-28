@@ -7,6 +7,7 @@ from mongo.tasks import task1
 Example DAG that demonstrates the usage of airgoodies.mongo.MongoConnection
 
 @author: Stavros Grigoriou <unix121@protonmail.com>
+@since: 0.0.2
 """
 
 with DAG(
@@ -17,7 +18,7 @@ with DAG(
             'owner': 'airflow'
         },
         catchup=False,
-        tags=['mongo_connection', 'airgoodies:v0.0.2'],
+        tags=['mongo_connection', 'airgoodies:v0.0.3'],
 ) as dag:
     import logging
 

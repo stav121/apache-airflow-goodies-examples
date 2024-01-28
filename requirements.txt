@@ -1,2 +1,2 @@
 # Add the requirement for `airgoodies`
-airgoodies==0.0.2
+airgoodies==0.0.3
