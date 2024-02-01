@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build docker-compose.yaml
+      - name: Build docker-compose.yaml for load_csv_from_s3_to_mongo example
         run: |
+          cd examples/load_csv_from_s3_to_mongo
           docker-compose build

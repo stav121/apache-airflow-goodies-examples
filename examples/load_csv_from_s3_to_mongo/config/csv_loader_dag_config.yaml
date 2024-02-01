@@ -1,0 +1,5 @@
+load_from_s3_and_save: # This will appear as our task_id in airflow
+  airgoodies_task: load_from_s3_to_mongo_table # The airgoodies pre-defined task name
+  config: # The configuration of the task
+    custom_transform_method: custom.transform.keep_athens # Use our custom transform method
+    output_table_name: my_output_table # The name of the output table to use

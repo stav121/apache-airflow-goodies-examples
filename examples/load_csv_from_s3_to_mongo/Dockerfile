@@ -3,7 +3,7 @@ FROM apache/airflow:2.7.2-python3.11
 
 COPY requirements.txt .
 
-# COPY deps/* .
+COPY deps/* .
 
 # Upgrade PIP
 RUN pip install --upgrade pip

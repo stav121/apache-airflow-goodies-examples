@@ -1,0 +1,8 @@
+{
+  "csv_loader.airgoodies-mongo-db-connection-url": "mongodb://root:root@mongo:27017",
+  "csv_loader.airgoodies-mongo-db-name": "data",
+  "csv_loader.airgoodies-aws-s3-connection-name": "s3_conn",
+  "csv_loader.airgoodies-aws-s3-default-bucket": "",
+  "csv_loader.airgoodies-dag-config-file-key": "csv_loader_dag_config.yaml",
+  "csv_loader.airgoodies-task-aws-load-from-s3-to-mongo-input-file-variable": "input_file"
+}
